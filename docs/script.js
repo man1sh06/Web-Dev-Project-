@@ -1,7 +1,7 @@
 // Simple interactive function
 function showMessage() {
     const messageElement = document.getElementById('message');
-    messageElement.textContent = 'Hello! Thanks for clicking. Welcome to my first project! ðŸŽ‰';
+    messageElement.textContent = 'Contact here- manish2006007@gmail.com';
 }
 
 // Add smooth scrolling for navigation links
