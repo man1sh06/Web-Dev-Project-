@@ -23,7 +23,7 @@ A basic HTML, CSS, and JavaScript website showcasing my introduction to web deve
 3. That's it!
 
 ## Author
-First Year CSE Student | DTU
+Manish (25/A03/071)
 
 ## Current Learning Path
 - Data Structures & Algorithms
