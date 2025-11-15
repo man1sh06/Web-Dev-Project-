@@ -3,46 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
+    <title>Manish | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to My First Web Project</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>Manish</h1>
+            <p class="subtitle">CSE Student | Web Developer | Problem Solver</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Manish a first year CSE student learning web development. This is my first project!</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Personal Portfolio Website</h3>
-            <p>A simple portfolio website built with HTML, CSS, and JavaScript to showcase my web development journey.</p>
-        </div>
-        <div class="project-card">
-            <h3>Learning Goals</h3>
-            <p>Currently focusing on C/C++, Data Structures & Algorithms, and Web Development fundamentals.</p>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Manish, a first-year Computer Science Engineering student passionate about web development, data structures, and problem-solving. I'm currently learning C/C++, DSA, and building projects to enhance my coding skills.</p>
+            <p>Roll Number: <strong>25/A03/071</strong></p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <button onclick="showMessage()">Click Me!</button>
-        <p id="message"></p>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card">
+                <h3>Bachelor of Technology - Computer Science Engineering</h3>
+                <p><strong>Delhi Technological University (DTU)</strong></p>
+                <p>2025 - 2029 | First Year</p>
+                <p><strong>Current Courses:</strong> Data Structures & Algorithms, C/C++ Programming, Web Development, Digital Systems, Engineering Graphics</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-item">
+                        <span>C/C++</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-item">
+                        <span>Git & GitHub</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>DSA</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive portfolio website built with HTML, CSS, and JavaScript showcasing my skills, education, and projects.</p>
+                    <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="project-card">
+                    <h3>DSA Problem Solving</h3>
+                    <p>Actively solving data structure and algorithm problems in C++ to strengthen problem-solving skills.</p>
+                    <p><strong>Technologies:</strong> C++, Algorithms</p>
+                </div>
+                <div class="project-card">
+                    <h3>Simple Calculator</h3>
+                    <p>A web-based calculator with basic arithmetic operations and a clean user interface.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p id="formMessage" class="form-message"></p>
+            <div class="contact-info">
+                <p><strong>GitHub:</strong> <a href="https://github.com/man1sh06" target="_blank">github.com/man1sh06</a></p>
+                <p><strong>Location:</strong> Delhi, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; MANISH (25/A03/071)</p>
+        <div class="container">
+            <p>&copy; 2025 Manish | Roll No: 25/A03/071 | CSE First Year | DTU</p>
+            <p>Personal Portfolio Website - Mini Project</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
+                            </html>
